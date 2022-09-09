@@ -22,9 +22,9 @@ const Home = () => {
 					<Form
 						id={formState}
 						fields={[
-							{ type: "text", name: "fullname", placeholder: "Full Name" },
-							{ type: "email", name: "email", placeholder: "Email" },
-							{ type: "password", name: "password", placeholder: "Password" }
+							{ type: "text", name: "fullname", placeholder: "Full Name", required: true },
+							{ type: "email", name: "email", placeholder: "Email", required: true, emailValidation: true },
+							{ type: "password", name: "password", placeholder: "Password", required: true }
 						]}
 						submitText="Create"
 						onSubmit={(user) => { dispatch(signup(user, () => setFormState(formStates.login))); }}
@@ -40,8 +40,8 @@ const Home = () => {
 						<Form
 							id={formState}
 							fields={[
-								{ type: "text", name: "email", placeholder: "Email" },
-								{ type: "password", name: "password", placeholder: "Password" },
+								{ type: "text", name: "email", placeholder: "Email", required: true, emailValidation: true },
+								{ type: "password", name: "password", placeholder: "Password", required: true },
 							]}
 							submitText="Log In"
 							onSubmit={(credentials) => {
