@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100vh;
+}
+
+input {
+  height: 45px;
+  width: 294px;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: #CBDBEA;
+  padding: 0 10px;
+}
+
+input:focus-visible {
+  outline-width: 0;
+  border-color: #99bcdd;
+}
+
+.todo-item input {
+  height: 45px;
+  width: 100%;
+  border: 0px;
+  padding: 0;
+}
+
+.todo-item textarea {
+  width: 100%;
+  border: 0px;
+}
+
+.todo-item textarea:focus-visible {
+  outline-width: 0;
+}
