@@ -1,6 +1,7 @@
 # To do Application
 
 - The requirement can be found at PDF within Repo and designs at https://www.figma.com/file/XcyiVAV9zW7kByNek6SY7n/Assignment-(Copy)?node-id=831%3A3
+- Access the hosted app @ http://todo-app-youshd.s3-website.ap-south-1.amazonaws.com/
 
 ## Requirements
 
